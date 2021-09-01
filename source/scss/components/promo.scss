@@ -3,7 +3,6 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
   max-height: 825px;
 
   @media (resolution: 2dppx) {
@@ -45,21 +44,20 @@
 
 @include tablet {
   .promo {
+    position: relative;
     background-image: url("../../img/promo-bg.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
-    max-height: 825px;
+    max-height: 340px;
 
     @media (resolution: 2dppx) {
       background-image: url("../../img/promo-bg@2x.jpg");
     }
 
     &__container {
-      padding: 318px 173px 240px 173px;
-      display: flex;
-      justify-content: space-between;
+      padding: 135px 143px 100px 143px;
+      display: block;
     }
 
     &__logo {
@@ -70,23 +68,26 @@
 
     &__title {
       margin: 0;
-      margin-bottom: 25px;
-      max-width: 393px;
-      font-weight: 700;
-      font-size: 46px;
-      line-height: 64px;
-      letter-spacing: -0.005em;
-      color: $color-white;
+      margin-bottom: 18px;
+      max-width: 100%;
+      font-size: 30px;
+      line-height: 42px;
+      text-align: center;
     }
 
     &__descr {
-      max-width: 381px;
-      font-weight: 300;
-      font-size: 20px;
+      max-width: 100%;
+      font-size: 18px;
       line-height: 32px;
-      letter-spacing: -0.005em;
-      opacity: 0.8;
-      color: $color-white;
+      text-align: center;
+    }
+
+    &__second-part {
+      min-width: 288px;
+      position: absolute;
+      top: 406px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -94,20 +95,17 @@
 @include mobile {
   .promo {
     background-image: url("../../img/promo-bg.jpg");
-    background-position: center;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
-    max-height: 825px;
+    max-height: 390px;
 
     @media (resolution: 2dppx) {
       background-image: url("../../img/promo-bg@2x.jpg");
+      background-position: top 60px;
     }
 
     &__container {
-      padding: 318px 173px 240px 173px;
-      display: flex;
-      justify-content: space-between;
+      padding: 121px 15px 100px 15px;
     }
 
     &__logo {
@@ -115,24 +113,23 @@
     }
 
     &__title {
-      margin: 0;
-      margin-bottom: 25px;
-      max-width: 393px;
-      font-weight: 700;
-      font-size: 46px;
-      line-height: 64px;
-      letter-spacing: -0.005em;
-      color: $color-white;
+      margin-bottom: 19px;
+      max-width: 767px;
+      font-size: 30px;
+      line-height: 42px;
     }
 
     &__descr {
-      max-width: 381px;
-      font-weight: 300;
-      font-size: 20px;
+      max-width: 767px;
+      font-size: 18px;
       line-height: 32px;
-      letter-spacing: -0.005em;
-      opacity: 0.8;
-      color: $color-white;
+    }
+
+    &__second-part {
+      position: absolute;
+      top: 455px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

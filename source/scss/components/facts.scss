@@ -1,0 +1,34 @@
+.facts {
+  padding-top: 126px;
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $color-mine-shaft;
+  }
+}
+
+@include tablet {
+  .facts {
+    padding-top: 393px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 41px;
+    }
+  }
+}
+
+@include mobile {
+  .facts {
+    padding-top: 412px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 41px;
+    }
+  }
+}
