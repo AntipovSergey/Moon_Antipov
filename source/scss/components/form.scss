@@ -1,0 +1,38 @@
+.form {
+  max-width: 327px;
+
+  &__title {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $color-white;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    padding-left: 29px;
+    width: 100%;
+    border: 1px solid $color-ghost;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba($color: $color-cod-gray, $alpha: 0.5);
+  }
+
+  &__button {
+    padding: 15px 47px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: $color-bright-turquoise;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+  }
+}

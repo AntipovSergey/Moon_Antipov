@@ -1,0 +1,138 @@
+.promo {
+  background-image: url("../../img/promo-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 825px;
+
+  @media (resolution: 2dppx) {
+    background-image: url("../../img/promo-bg@2x.jpg");
+  }
+
+  &__container {
+    padding: 318px 173px 240px 173px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    max-width: 393px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing: -0.005em;
+    color: $color-white;
+  }
+
+  &__descr {
+    max-width: 381px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    opacity: 0.8;
+    color: $color-white;
+  }
+}
+
+@include tablet {
+  .promo {
+    background-image: url("../../img/promo-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 825px;
+
+    @media (resolution: 2dppx) {
+      background-image: url("../../img/promo-bg@2x.jpg");
+    }
+
+    &__container {
+      padding: 318px 173px 240px 173px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 25px;
+      left: 21px;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 25px;
+      max-width: 393px;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 64px;
+      letter-spacing: -0.005em;
+      color: $color-white;
+    }
+
+    &__descr {
+      max-width: 381px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.005em;
+      opacity: 0.8;
+      color: $color-white;
+    }
+  }
+}
+
+@include mobile {
+  .promo {
+    background-image: url("../../img/promo-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 825px;
+
+    @media (resolution: 2dppx) {
+      background-image: url("../../img/promo-bg@2x.jpg");
+    }
+
+    &__container {
+      padding: 318px 173px 240px 173px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      left: 18px;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 25px;
+      max-width: 393px;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 64px;
+      letter-spacing: -0.005em;
+      color: $color-white;
+    }
+
+    &__descr {
+      max-width: 381px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.005em;
+      opacity: 0.8;
+      color: $color-white;
+    }
+  }
+}
