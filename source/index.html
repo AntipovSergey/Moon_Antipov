@@ -20,12 +20,12 @@
           <li class="navigation__item"><a href="#video" class="navigation__link">Видео про велосипеды</a></li>
           <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
         </ul>
-        <svg class="navigation__close" width="24" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="navigation__close" width="24" height="25" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#close"></use>
         </svg>
       </nav>
       <div class="main-header__menu">
-        <svg class="main-header__burger" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-header__burger" width="30" height="30"  xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#menu"></use>
         </svg>
       </div>
@@ -45,10 +45,10 @@
             <form class="promo__form form" method="GET" action="#">
               <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
               <label class="form__label" for="form-name">
-                <input class="form__input" type="text" name="form-name" id="form-name" placeholder="Введите Ваше Имя">
+                <input class="form__input" type="text" name="form-name" id="form-name" placeholder="Введите Ваше Имя" minlength="2" maxlength="25"" required>
               </label>
               <label class="form__label" for="form-tel">
-                <input class="form__input" type="tel" name="form-tel" id="form-tel" placeholder="Введите Ваш номер телефона">
+                <input class="form__input" type="tel" name="form-tel" id="form-tel" placeholder="Введите Ваш номер телефона" required>
               </label>
               <button class="form__button btn-reset">Подобрать велосипед мечты</button>
             </form>
@@ -62,6 +62,7 @@
       </section>
     </main>
   </div>
-  <script src="js/script.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

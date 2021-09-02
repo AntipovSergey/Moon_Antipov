@@ -1,5 +1,5 @@
 .form {
-  max-width: 327px;
+  width: 327px;
 
   &__title {
     margin: 0;
@@ -26,20 +26,44 @@
     color: rgba($color: $color-cod-gray, $alpha: 0.5);
   }
 
+  &__input:focus:invalid {
+    outline: none;
+    border: 1px solid $color-red;
+  }
+
+  &__input:focus:valid {
+    outline: none;
+    border: 1px solid $color-green;
+  }
+
   &__button {
     padding: 15px 47px;
     width: 100%;
     border-radius: 6px;
+    color: $color-black;
     background-color: $color-bright-turquoise;
     font-weight: 600;
     font-size: 15px;
     line-height: 21px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  &__button:hover {
+    color: $color-woodsmoke;
+    background-color: $color-ghost;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  &__button:focus,
+  &__button:active {
+    color: $color-woodsmoke;
+    background-color: $color-ghost;
   }
 }
 
 @include tablet {
   .form {
-    max-width: 321px;
+    width: 321px;
 
     &__title {
       margin: 0;
