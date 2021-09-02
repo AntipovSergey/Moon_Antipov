@@ -1,17 +1,222 @@
 .bikes {
   background-color: $color-athens-gray;
   padding-top: 150px;
+  padding-bottom: 10px;
 
+  &__container {
+    margin-bottom: 150px;
+  }
 
   &__title {
     margin: 0;
-    margin-bottom: 103px;
+    margin-bottom: 60px;
     text-align: center;
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
     letter-spacing: -0.005em;
     color: $color-mine-shaft;
+  }
+
+  &__list {
+    padding: 0 20px;
+    display: flex;
+    column-gap: 50px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 342px;
+    border-radius: 10px;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__item:nth-child(3n+1) .bikes__image::before {
+    position: absolute;
+    content: "";
+    top: 49%;
+    left: -60px;
+    transform: translateY(-50%);
+    background-image: url("../../img/icons/big-cirle.svg");
+    height: 180px;
+    width: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__item:nth-child(3n-1) .bikes__image::before {
+    position: absolute;
+    content: "";
+    top: -18px;
+    left: -19px;
+    background-image: url("../../img/icons/box.svg");
+    height: 47px;
+    width: 47px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  &__item:nth-child(3n-1) .bikes__image::after {
+    position: absolute;
+    content: "";
+    bottom: -23px;
+    right: -23px;
+    background-image: url("../../img/icons/box.svg");
+    height: 47px;
+    width: 47px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  &__item:nth-child(3n) .bikes__image::before {
+    position: absolute;
+    content: "";
+    top: -32px;
+    right: -36px;
+    background-image: url("../../img/icons/small-circle.svg");
+    height: 95px;
+    width: 95px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  &__item:nth-child(3n-1) {
+    margin-top: 29px;
+  }
+
+  &__item:nth-child(3n) {
+    margin-top: -10px;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__item:nth-child(3n+1) .bikes__img {
+    height: 503px;
+  }
+
+  &__item:nth-child(3n-1) .bikes__img {
+    height: 566px;
+  }
+
+  &__item:nth-child(3n) .bikes__img {
+    height: 513px;
+  }
+
+  &__descr {
+    display: block;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  @media (max-width: 1250px) {
+    padding-top: 110px;
+
+    &__list {
+      padding: 0 20px;
+      display: flex;
+      column-gap: 50px;
+      row-gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      position: relative;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    &__item:nth-child(3n-1) {
+      margin-top: 29px;
+    }
+
+    &__item:nth-child(3n) {
+      margin-top: -10px;
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      display: block;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &__item:nth-child(3n+1) .bikes__img {
+      height: 441px;
+    }
+
+    &__item:nth-child(3n-1) .bikes__img {
+      height: 496px;
+    }
+
+    &__item:nth-child(3n) .bikes__img {
+      height: 450px;
+    }
+  }
+
+  @media (max-width: 1125px) {
+    padding-top: 90px;
+
+    &__list {
+      padding: 0 20px;
+      display: flex;
+      column-gap: 50px;
+      row-gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      position: relative;
+      max-width: 275px;
+      border-radius: 10px;
+    }
+
+    &__item:nth-child(3n-1) {
+      margin-top: 29px;
+    }
+
+    &__item:nth-child(3n) {
+      margin-top: -10px;
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      display: block;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &__item:nth-child(3n+1) .bikes__img {
+      height: 404px;
+    }
+
+    &__item:nth-child(3n-1) .bikes__img {
+      height: 454px;
+    }
+
+    &__item:nth-child(3n) .bikes__img {
+      height: 412px;
+    }
   }
 }
 
@@ -21,9 +226,77 @@
     padding-top: 50px;
 
     &__title {
-      margin-bottom: 103px;
+      margin-bottom: 30px;
       font-size: 24px;
       line-height: 41px;
+    }
+
+    &__list {
+      padding: 0;
+      row-gap: 104px;
+    }
+
+    &__item {
+      max-width: 270px;
+      height: 300px;
+    }
+
+    &__item:nth-child(3n+1) .bikes__img {
+      height: 300px;
+    }
+
+    &__item:nth-child(3n-1) .bikes__img {
+      height: 300px;
+    }
+
+    &__item:nth-child(3n) .bikes__img {
+      height: 300px;
+    }
+
+    &__item:nth-child(3n-1) {
+      margin-top: 0;
+    }
+
+    &__item:nth-child(3n) {
+      margin-top: 0;
+    }
+
+    &__item:nth-child(3n+1) .bikes__image::before {
+      display: none;
+    }
+
+    &__item:nth-child(3n+1) .bikes__image::after {
+      position: absolute;
+      content: "";
+      bottom: -28px;
+      left: -37px;
+      background-image: url("../../img/icons/medium-circle.svg");
+      height: 127px;
+      width: 127px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    &__item:nth-child(3n-1) .bikes__image::before {
+      display: none;
+    }
+
+    &__item:nth-child(3n-1) .bikes__image::after {
+      display: none;
+    }
+
+    &__item:nth-child(3n) .bikes__image::before {
+      position: absolute;
+      content: "";
+      top: -20px;
+      right: -25px;
+      background-image: url("../../img/icons/tiny-circle.svg");
+      height: 68px;
+      width: 68px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
     }
   }
 }
@@ -33,7 +306,37 @@
     background-color: $color-athens-gray;
 
     &__title {
-      margin-bottom: 103px;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      row-gap: 96px;
+    }
+
+    &__item:nth-child(3n+1) .bikes__image::after {
+      position: absolute;
+      content: "";
+      bottom: -28px;
+      left: -25px;
+      background-image: url("../../img/icons/medium-circle.svg");
+      height: 127px;
+      width: 127px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    &__item:nth-child(3n) .bikes__image::before {
+      position: absolute;
+      content: "";
+      top: -20px;
+      right: -14px;
+      background-image: url("../../img/icons/tiny-circle.svg");
+      height: 68px;
+      width: 68px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
     }
   }
 }
