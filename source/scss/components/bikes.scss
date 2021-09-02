@@ -1,0 +1,39 @@
+.bikes {
+  background-color: $color-athens-gray;
+  padding-top: 150px;
+
+
+  &__title {
+    margin: 0;
+    margin-bottom: 103px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $color-mine-shaft;
+  }
+}
+
+@include tablet {
+  .bikes {
+    background-color: $color-athens-gray;
+    padding-top: 50px;
+
+    &__title {
+      margin-bottom: 103px;
+      font-size: 24px;
+      line-height: 41px;
+    }
+  }
+}
+
+@include mobile {
+  .bikes {
+    background-color: $color-athens-gray;
+
+    &__title {
+      margin-bottom: 103px;
+    }
+  }
+}
