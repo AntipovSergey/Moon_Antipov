@@ -1,10 +1,14 @@
 .contacts {
   &__container {
     padding-top: 246px;
+    padding-bottom: 95px;
+    padding-left: 134px;
+    padding-right: 134px;
   }
 
   &__title {
     margin: 0;
+    margin-bottom: 32px;
     text-align: center;
     color: $color-mine-shaft;
     font-weight: 600;
@@ -12,16 +16,183 @@
     line-height: 30px;
     letter-spacing: -0.005em;
   }
+
+  &__descr {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 555px;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    color: rgba($color: $color-black, $alpha: 0.7);
+  }
+
+  &__map {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 530px;
+  }
+
+  &__contacts-container {
+    margin: 0 auto;
+    max-width: 564px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__item .contacts__link {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba($color: $color-black, $alpha: 0.5);
+    transition: color 0.3s;
+  }
+
+  &__item:hover .contacts__link,
+  &__item:focus .contacts__link,
+  &__item:active .contacts__link {
+    color: rgba($color: $color-black, $alpha: 1);
+    transition: color 0.3s;
+  }
+
+  &__item .contacts__mail {
+    fill: $color-bright-turquoise;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  &__item:hover .contacts__mail {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+
+  &__item .contacts__tel {
+    stroke: $color-bright-turquoise;
+    fill: transparent;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  &__item:hover .contacts__tel {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
 }
 
 @include tablet {
   .contacts {
     &__container {
       padding-top: 155px;
+      padding-bottom: 53px;
+      padding-left: 35px;
+      padding-right: 35px;
     }
 
     &__title {
+      margin-bottom: 20px;
       font-size: 24px;
+    }
+
+    &__descr {
+      margin-bottom: 20px;
+      max-width: 629px;
+    }
+
+    &__map {
+      margin-bottom: 22px;
+      height: 545px;
+    }
+
+    &__contacts-container {
+      margin: 0 auto;
+      max-width: 559px;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 91px;
+    }
+
+    &__item {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba($color: $color-black, $alpha: 0.5);
+    }
+  }
+}
+
+@include mobile {
+  .contacts {
+    &__container {
+      padding-top: 119px;
+      padding-bottom: 49px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    &__descr {
+      margin-bottom: 19px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    &__map {
+      margin-bottom: 31px;
+      height: 250px;
+    }
+
+    &__contacts-container {
+      margin: 0 auto;
+      padding-left: 30px;
+      padding-right: 22px;
+      max-width: 559px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    &__item:first-child {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__item:last-child {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__item:last-child .contacts__link {
+      padding-right: 20px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba($color: $color-black, $alpha: 0.5);
     }
   }
 }

@@ -68,3 +68,12 @@ playButton.addEventListener('click', (e) => {
   setTimeout(() => {
   }, 1000)
 });
+
+//Закрытие меню при нажатии на ссылку в планшетной и мобильной версиях
+const links = document.querySelectorAll('.navigation__link');
+
+for (let link of links) {
+  link.addEventListener ('click', () => {
+    nav.classList.remove('is-open');
+  })
+}

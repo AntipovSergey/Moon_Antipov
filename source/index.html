@@ -15,7 +15,7 @@
     <header class="main-header">
       <nav class="main-header__navigation navigation navigation--nojs">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#about" class="navigation__link">О нас</a></li>
+          <li class="navigation__item"><a href="#promo" class="navigation__link">О нас</a></li>
           <li class="navigation__item"><a href="#bikes" class="navigation__link">Виды велосипедов</a></li>
           <li class="navigation__item"><a href="#video" class="navigation__link">Видео про велосипеды</a></li>
           <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
@@ -32,7 +32,7 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">Интернет-магазин велосипедов - Moon</h1>
-      <section class="promo">
+      <section class="promo" id="promo">
         <div class="container promo__container">
           <div class="promo__first-part">
             <a class="promo__logo logo">
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </section>
-      <section class="bikes">
+      <section class="bikes" id="bikes">
         <div class="container bikes__container">
           <h2 class="bikes__title">Виды велосипедов</h2>
           <ul class="bikes__list">
@@ -106,7 +106,7 @@
           </ul>
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="video">
         <div class="container video__container">
           <h2 class="video__title">Видео про велосипеды</h2>
           <p class="video__descr">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
@@ -121,9 +121,31 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container contacts__container">
           <h2 class="contacts__title">Как нас найти?</h2>
+          <p class="contacts__descr">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000686667578!2d30.321008016680395!3d59.938778181876195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1630663635553!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="contacts__contacts-container">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__mail" width="26" height="20"  xmlns="http://www.w3.org/2000/svg" aria-label="Email">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+              <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__link">
+                puteshestviemechta@gmail.ru
+              </a>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__tel" width="22" height="24"  xmlns="http://www.w3.org/2000/svg" aria-label="Телефон">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <a href="tel:749978468446" class="contacts__link">
+                +7 (499) -784-684-46
+              </a>
+            </li>
+          </ul>
+          </div>
         </div>
       </section>
     </main>
