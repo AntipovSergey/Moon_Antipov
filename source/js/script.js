@@ -57,3 +57,14 @@ userNameInput.addEventListener('input', () => {
 
   userNameInput.reportValidity();
 });
+
+//Включение видео
+const playButton = document.querySelector('.video__button');
+
+playButton.addEventListener('click', (e) => {
+  let video = e.currentTarget.closest('.video__video').querySelector('video');
+  video.play();
+  e.currentTarget.style.display = "none";
+  setTimeout(() => {
+  }, 1000)
+});

@@ -26,6 +26,10 @@
     color: rgba($color: $color-cod-gray, $alpha: 0.5);
   }
 
+  &__input:hover {
+    border: 1px solid $color-bright-turquoise;
+  }
+
   &__input:focus:invalid {
     outline: none;
     border: 1px solid $color-red;

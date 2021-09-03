@@ -116,6 +116,7 @@
       stroke: $color-woodsmoke-shade;
       stroke-opacity: 0.2;
       transition: stroke 0.3s, stroke-opacity 0.3s;
+      cursor: pointer;
     }
 
     &__close:hover {

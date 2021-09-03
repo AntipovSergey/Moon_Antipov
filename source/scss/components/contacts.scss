@@ -1,0 +1,27 @@
+.contacts {
+  &__container {
+    padding-top: 246px;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+    color: $color-mine-shaft;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+  }
+}
+
+@include tablet {
+  .contacts {
+    &__container {
+      padding-top: 155px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

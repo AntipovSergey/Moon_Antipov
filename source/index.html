@@ -20,12 +20,12 @@
           <li class="navigation__item"><a href="#video" class="navigation__link">Видео про велосипеды</a></li>
           <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
         </ul>
-        <svg class="navigation__close" width="24" height="25" xmlns="http://www.w3.org/2000/svg">
+        <svg class="navigation__close" width="24" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Закрыть меню">
           <use xlink:href="img/sprite.svg#close"></use>
         </svg>
       </nav>
       <div class="main-header__menu">
-        <svg class="main-header__burger" width="30" height="30"  xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-header__burger" width="30" height="30"  xmlns="http://www.w3.org/2000/svg" aria-label="Открыть меню">
           <use xlink:href="img/sprite.svg#menu"></use>
         </svg>
       </div>
@@ -104,6 +104,26 @@
               <span class="bikes__descr">Детский велосипед</span>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container video__container">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p class="video__descr">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <div class="video__video">
+            <video poster="img/video-poster.jpg" muted playsinline>
+              <source src="video/video.mp4" type="video/mp4">
+            </video>
+            <svg class="video__button" width="65" height="65" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="circle" fill-rule="evenodd" clip-rule="evenodd" d="M45.1788 90.3576C70.1303 90.3576 90.3576 70.1303 90.3576 45.1788C90.3576 20.2272 70.1303 0 45.1788 0C20.2272 0 0 20.2272 0 45.1788C0 70.1303 20.2272 90.3576 45.1788 90.3576Z"/>
+              <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M39.7573 32.5286L57.8288 45.1786L39.7573 57.8287V32.5286Z"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <h2 class="contacts__title">Как нас найти?</h2>
         </div>
       </section>
     </main>

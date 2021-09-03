@@ -1,0 +1,152 @@
+.video {
+  background-color: $color-woodsmoke;
+
+  &__container {
+    position: relative;
+    padding-top: 120px;
+    max-height: 706px;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__descr {
+    margin: 0 auto;
+    max-width: 340px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $color-white;
+    opacity: 0.7;
+  }
+
+  &__video {
+    position: relative;
+    max-width: 929px;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__video video {
+    max-width: 929px;
+  }
+
+  &__button {
+    position: absolute;
+    content: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+  }
+
+  &__button .circle {
+    fill: $color-bright-turquoise;
+    opacity: 1;
+    transition: fill 0.3s, opacity 0.3s;
+  }
+
+  &__button:hover .circle,
+  &__button:focus .circle,
+  &__button:active .circle {
+    fill: $color-bright-turquoise;
+    opacity: 0.5;
+    transition: fill 0.3s, opacity 0.3s;
+  }
+
+  &__button .play {
+    fill: $color-cod-gray-shade;
+    opacity: 1;
+    transition: fill 0.3s, opacity 0.3s;
+  }
+
+  &__button:hover .play,
+  &__button:focus .play,
+  &__button:active .play {
+    fill: $color-cod-gray-shade;
+    opacity: 0.5;
+    transition: fill 0.3s, opacity 0.3s;
+  }
+}
+
+@include tablet {
+  .video {
+    &__container {
+      padding-top: 70px;
+      max-height: 413px;
+    }
+
+    &__title {
+      margin-bottom: 19px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__descr {
+      max-width: 429px;
+    }
+
+    &__video {
+      max-width: 503px;
+      top: 41px;
+    }
+
+    &__video video {
+      max-width: 503px;
+    }
+
+    &__button {
+      width: 90px;
+      height: 90px;
+      top: 49%;
+    }
+  }
+}
+
+@include mobile {
+  .video {
+    &__container {
+      padding-top: 84px;
+      max-height: 384px;
+    }
+
+    &__title {
+      margin-bottom: 19px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__descr {
+      max-width: 429px;
+    }
+
+    &__video {
+      max-width: 288px;
+      top: 54px;
+    }
+
+    &__video video {
+      max-width: 288px;
+    }
+
+    &__button {
+      width: 65px;
+      height: 65px;
+      top: 47%;
+    }
+  }
+}
