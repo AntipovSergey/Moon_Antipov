@@ -46,6 +46,12 @@
     letter-spacing: -1.27273px;
     color: $color-bright-turquoise;
   }
+
+  @media (max-width: 1126px) {
+    &__item {
+      font-size: 18px;
+    }
+  }
 }
 
 @include tablet {
@@ -71,6 +77,7 @@
 
     &__item {
       max-width: 263px;
+      font-size: 22px;
     }
 
     &__item::before {
