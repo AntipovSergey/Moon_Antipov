@@ -43,6 +43,12 @@
     max-width: 929px;
   }
 
+  .video__button .circle {
+    fill: $color-bright-turquoise;
+    opacity: 1;
+    transition: fill 0.3s, opacity 0.3s;
+  }
+
   .video__button {
     position: absolute;
     content: none;
@@ -52,33 +58,27 @@
     width: 65px;
     height: 65px;
     cursor: pointer;
-  }
 
-  .video__button .circle {
-    fill: $color-bright-turquoise;
-    opacity: 1;
-    transition: fill 0.3s, opacity 0.3s;
-  }
+    &:hover .circle,
+    &:focus .circle,
+    &:active .circle {
+      fill: $color-bright-turquoise;
+      opacity: 0.5;
+      transition: fill 0.3s, opacity 0.3s;
+    }
 
-  &__button:hover .circle,
-  &__button:focus .circle,
-  &__button:active .circle {
-    fill: $color-bright-turquoise;
-    opacity: 0.5;
-    transition: fill 0.3s, opacity 0.3s;
+    &:hover .play,
+    &:focus .play,
+    &:active .play {
+      fill: $color-cod-gray-shade;
+      opacity: 0.5;
+      transition: fill 0.3s, opacity 0.3s;
+    }
   }
 
   .video__button .play {
     fill: $color-cod-gray-shade;
     opacity: 1;
-    transition: fill 0.3s, opacity 0.3s;
-  }
-
-  &__button:hover .play,
-  &__button:focus .play,
-  &__button:active .play {
-    fill: $color-cod-gray-shade;
-    opacity: 0.5;
     transition: fill 0.3s, opacity 0.3s;
   }
 

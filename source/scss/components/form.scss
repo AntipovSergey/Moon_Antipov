@@ -24,24 +24,24 @@
     font-size: 15px;
     line-height: 24px;
     color: $color-black;
-  }
 
-  input::placeholder {
-    color: rgba($color: $color-cod-gray, $alpha: 0.5);
-  }
+    &::placeholder {
+      color: rgba($color: $color-cod-gray, $alpha: 0.5);
+    }
 
-  input:hover {
-    border: 1px solid $color-bright-turquoise;
-  }
+    &:hover {
+      border: 1px solid $color-bright-turquoise;
+    }
 
-  input:focus:invalid {
-    outline: none;
-    border: 1px solid $color-red;
-  }
+    &:focus:invalid {
+      outline: none;
+      border: 1px solid $color-red;
+    }
 
-  input:focus:valid {
-    outline: none;
-    border: 1px solid $color-green;
+    &:focus:valid {
+      outline: none;
+      border: 1px solid $color-green;
+    }
   }
 
   .form__button {
@@ -54,18 +54,18 @@
     font-size: 15px;
     line-height: 21px;
     transition: color 0.3s, background-color 0.3s;
-  }
 
-  &__button:hover {
-    color: $color-woodsmoke;
-    background-color: $color-ghost;
-    transition: color 0.3s, background-color 0.3s;
-  }
+    &:hover {
+      color: $color-woodsmoke;
+      background-color: $color-ghost;
+      transition: color 0.3s, background-color 0.3s;
+    }
 
-  &__button:focus,
-  &__button:active {
-    color: $color-woodsmoke;
-    background-color: $color-ghost;
+    &:focus,
+    &:active {
+      color: $color-woodsmoke;
+      background-color: $color-ghost;
+    }
   }
 }
 

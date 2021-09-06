@@ -31,21 +31,21 @@
     line-height: 34px;
     text-align: center;
     letter-spacing: -0.5px;
-  }
 
-  &__item::before {
-    position: absolute;
-    counter-increment: factsList;
-    content: "0"counter(factsList);
-    top: -53px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: -1.27273px;
-    color: $color-bright-turquoise;
+    &::before {
+      position: absolute;
+      counter-increment: factsList;
+      content: "0"counter(factsList);
+      top: -53px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: -1.27273px;
+      color: $color-bright-turquoise;
+    }
   }
 
   @media (max-width: 1126px) {

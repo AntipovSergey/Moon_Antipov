@@ -20,7 +20,7 @@ if(menuClose) {
 }
 
 //Маска для поля tel
-let selector = document.querySelectorAll('input[type="tel"]');
+let selector = document.getElementById('form-tel');
 let im = new Inputmask('+7 (999) 999-99-99');
 
 if(selector) {

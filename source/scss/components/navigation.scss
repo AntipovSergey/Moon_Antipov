@@ -23,19 +23,19 @@
     opacity: 0.7;
     color: $color-white;
     transition: color 0.3s, opacity 0.3s;
-  }
 
-  &__link:hover {
-    color: $color-white;
-    opacity: 1;
-    transition: color 0.3s, opacity 0.3s;
-  }
+    &:hover {
+      color: $color-white;
+      opacity: 1;
+      transition: color 0.3s, opacity 0.3s;
+    }
 
-  &__link:focus,
-  &__link:active {
-    color: $color-white;
-    opacity: 1;
-    transition: color 0.3s, opacity 0.3s;
+    &:focus,
+    &:active {
+      color: $color-white;
+      opacity: 1;
+      transition: color 0.3s, opacity 0.3s;
+    }
   }
 
   .navigation__close {
@@ -73,18 +73,18 @@
       margin: 0;
       margin-bottom: 28px;
       width: 100%;
-    }
 
-    &__item::after {
-      position: absolute;
-      content: "";
-      top: 23px;
-      right: 24px;
-      background-image: url("../../img/icons/menu-arrow.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 8px;
-      height: 12px;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 23px;
+        right: 24px;
+        background-image: url("../../img/icons/menu-arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 8px;
+        height: 12px;
+      }
     }
 
     .navigation__link {
@@ -99,14 +99,14 @@
       background-color: $color-wild-sand;
       transition: color 0.3s, background-color 0.3s;
       vertical-align: middle;
-    }
 
-    &__link:hover,
-    &__link:focus,
-    &__link:active {
-      color: $color-black;
-      background-color: $color-ghost;
-      transition: color 0.3s, background-color 0.3s;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-black;
+        background-color: $color-ghost;
+        transition: color 0.3s, background-color 0.3s;
+      }
     }
 
     .navigation__close {
@@ -118,19 +118,19 @@
       stroke-opacity: 0.2;
       transition: stroke 0.3s, stroke-opacity 0.3s;
       cursor: pointer;
-    }
 
-    &__close:hover {
-      stroke-opacity: 1;
-      stroke: $color-black;
-      transition: stroke 0.3s, stroke-opacity 0.3s;
-    }
+      &:hover {
+        stroke-opacity: 1;
+        stroke: $color-black;
+        transition: stroke 0.3s, stroke-opacity 0.3s;
+      }
 
-    &__close:focus,
-    &__close:active {
-      stroke-opacity: 1;
-      stroke: $color-black;
-      transition: stroke 0.3s, stroke-opacity 0.3s;
+      &:focus,
+      &:active {
+        stroke-opacity: 1;
+        stroke: $color-black;
+        transition: stroke 0.3s, stroke-opacity 0.3s;
+      }
     }
   }
 

@@ -31,6 +31,79 @@
     position: relative;
     max-width: 342px;
     border-radius: 10px;
+
+    &:nth-child(3n+1) .bikes__image::before {
+      position: absolute;
+      content: "";
+      top: 49%;
+      left: -60px;
+      transform: translateY(-50%);
+      background-image: url("../../img/icons/big-cirle.svg");
+      height: 180px;
+      width: 180px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    &:nth-child(3n-1) .bikes__image::before {
+      position: absolute;
+      content: "";
+      top: -18px;
+      left: -19px;
+      background-image: url("../../img/icons/box.svg");
+      height: 47px;
+      width: 47px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    &:nth-child(3n-1) .bikes__image::after {
+      position: absolute;
+      content: "";
+      bottom: -23px;
+      right: -23px;
+      background-image: url("../../img/icons/box.svg");
+      height: 47px;
+      width: 47px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    &:nth-child(3n) .bikes__image::before {
+      position: absolute;
+      content: "";
+      top: -32px;
+      right: -36px;
+      background-image: url("../../img/icons/small-circle.svg");
+      height: 95px;
+      width: 95px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    &:nth-child(3n-1) {
+      margin-top: 29px;
+    }
+
+    &:nth-child(3n) {
+      margin-top: -10px;
+    }
+
+    &:nth-child(3n+1) .bikes__img {
+      height: 503px;
+    }
+
+    &:nth-child(3n-1) .bikes__img {
+      height: 566px;
+    }
+
+    &:nth-child(3n) .bikes__img {
+      height: 513px;
+    }
   }
 
   .bikes__image {
@@ -43,79 +116,6 @@
     display: block;
     object-fit: cover;
     border-radius: 10px;
-  }
-
-  &__item:nth-child(3n+1) .bikes__image::before {
-    position: absolute;
-    content: "";
-    top: 49%;
-    left: -60px;
-    transform: translateY(-50%);
-    background-image: url("../../img/icons/big-cirle.svg");
-    height: 180px;
-    width: 180px;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-
-  &__item:nth-child(3n-1) .bikes__image::before {
-    position: absolute;
-    content: "";
-    top: -18px;
-    left: -19px;
-    background-image: url("../../img/icons/box.svg");
-    height: 47px;
-    width: 47px;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  &__item:nth-child(3n-1) .bikes__image::after {
-    position: absolute;
-    content: "";
-    bottom: -23px;
-    right: -23px;
-    background-image: url("../../img/icons/box.svg");
-    height: 47px;
-    width: 47px;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  &__item:nth-child(3n) .bikes__image::before {
-    position: absolute;
-    content: "";
-    top: -32px;
-    right: -36px;
-    background-image: url("../../img/icons/small-circle.svg");
-    height: 95px;
-    width: 95px;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  &__item:nth-child(3n-1) {
-    margin-top: 29px;
-  }
-
-  &__item:nth-child(3n) {
-    margin-top: -10px;
-  }
-
-  &__item:nth-child(3n+1) .bikes__img {
-    height: 503px;
-  }
-
-  &__item:nth-child(3n-1) .bikes__img {
-    height: 566px;
-  }
-
-  &__item:nth-child(3n) .bikes__img {
-    height: 513px;
   }
 
   .bikes__descr {
@@ -132,18 +132,18 @@
 
     .bikes__item {
       max-width: 300px;
-    }
 
-    &__item:nth-child(3n+1) .bikes__img {
-      height: 441px;
-    }
+      &:nth-child(3n+1) .bikes__img {
+        height: 441px;
+      }
 
-    &__item:nth-child(3n-1) .bikes__img {
-      height: 496px;
-    }
+      &:nth-child(3n-1) .bikes__img {
+        height: 496px;
+      }
 
-    &__item:nth-child(3n) .bikes__img {
-      height: 450px;
+      &:nth-child(3n) .bikes__img {
+        height: 450px;
+      }
     }
   }
 
@@ -156,18 +156,18 @@
 
     .bikes__item {
       max-width: 270px;
-    }
 
-    &__item:nth-child(3n+1) .bikes__img {
-      height: 392px;
-    }
+      &:nth-child(3n+1) .bikes__img {
+        height: 392px;
+      }
 
-    &__item:nth-child(3n-1) .bikes__img {
-      height: 440px;
-    }
+      &:nth-child(3n-1) .bikes__img {
+        height: 440px;
+      }
 
-    &__item:nth-child(3n) .bikes__img {
-      height: 400px;
+      &:nth-child(3n) .bikes__img {
+        height: 400px;
+      }
     }
   }
 }
@@ -194,64 +194,64 @@
     .bikes__item {
       max-width: 270px;
       height: 300px;
-    }
 
-    &__item:nth-child(3n+1) .bikes__img {
-      height: 300px;
-    }
+      &:nth-child(3n+1) .bikes__img {
+        height: 300px;
+      }
 
-    &__item:nth-child(3n-1) .bikes__img {
-      height: 300px;
-    }
+      &:nth-child(3n-1) .bikes__img {
+        height: 300px;
+      }
 
-    &__item:nth-child(3n) .bikes__img {
-      height: 300px;
-    }
+      &:nth-child(3n) .bikes__img {
+        height: 300px;
+      }
 
-    &__item:nth-child(3n-1) {
-      margin-top: 0;
-    }
+      &:nth-child(3n-1) {
+        margin-top: 0;
+      }
 
-    &__item:nth-child(3n) {
-      margin-top: 0;
-    }
+      &:nth-child(3n) {
+        margin-top: 0;
+      }
 
-    &__item:nth-child(3n+1) .bikes__image::before {
-      display: none;
-    }
+      &:nth-child(3n+1) .bikes__image::before {
+        display: none;
+      }
 
-    &__item:nth-child(3n+1) .bikes__image::after {
-      position: absolute;
-      content: "";
-      bottom: -28px;
-      left: -37px;
-      background-image: url("../../img/icons/medium-circle.svg");
-      height: 127px;
-      width: 127px;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+      &:nth-child(3n+1) .bikes__image::after {
+        position: absolute;
+        content: "";
+        bottom: -28px;
+        left: -37px;
+        background-image: url("../../img/icons/medium-circle.svg");
+        height: 127px;
+        width: 127px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
 
-    &__item:nth-child(3n-1) .bikes__image::before {
-      display: none;
-    }
+      &:nth-child(3n-1) .bikes__image::before {
+        display: none;
+      }
 
-    &__item:nth-child(3n-1) .bikes__image::after {
-      display: none;
-    }
+      &:nth-child(3n-1) .bikes__image::after {
+        display: none;
+      }
 
-    &__item:nth-child(3n) .bikes__image::before {
-      position: absolute;
-      content: "";
-      top: -20px;
-      right: -25px;
-      background-image: url("../../img/icons/tiny-circle.svg");
-      height: 68px;
-      width: 68px;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: 3;
+      &:nth-child(3n) .bikes__image::before {
+        position: absolute;
+        content: "";
+        top: -20px;
+        right: -25px;
+        background-image: url("../../img/icons/tiny-circle.svg");
+        height: 68px;
+        width: 68px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 3;
+      }
     }
   }
 }
@@ -270,30 +270,32 @@
       row-gap: 96px;
     }
 
-    &__item:nth-child(3n+1) .bikes__image::after {
-      position: absolute;
-      content: "";
-      bottom: -28px;
-      left: -25px;
-      background-image: url("../../img/icons/medium-circle.svg");
-      height: 127px;
-      width: 127px;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+    .bikes__item {
+      &:nth-child(3n+1) .bikes__image::after {
+        position: absolute;
+        content: "";
+        bottom: -28px;
+        left: -25px;
+        background-image: url("../../img/icons/medium-circle.svg");
+        height: 127px;
+        width: 127px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
 
-    &__item:nth-child(3n) .bikes__image::before {
-      position: absolute;
-      content: "";
-      top: -20px;
-      right: -14px;
-      background-image: url("../../img/icons/tiny-circle.svg");
-      height: 68px;
-      width: 68px;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: 3;
+      &:nth-child(3n) .bikes__image::before {
+        position: absolute;
+        content: "";
+        top: -20px;
+        right: -14px;
+        background-image: url("../../img/icons/tiny-circle.svg");
+        height: 68px;
+        width: 68px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 3;
+      }
     }
   }
 }
