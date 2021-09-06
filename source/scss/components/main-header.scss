@@ -4,14 +4,14 @@
   left: 0;
   width: 100%;
 
-  &__menu {
+  .main-header__menu {
     display: none;
   }
 }
 
 @include tablet {
   .main-header {
-    &__menu {
+    .main-header__menu {
       display: block;
       position: absolute;
       top: 0;
@@ -22,7 +22,7 @@
       z-index: 10;
     }
 
-    &__burger {
+    .main-header__burger {
       position: relative;
       top: 50%;
       left: 50%;

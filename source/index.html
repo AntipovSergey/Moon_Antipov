@@ -45,12 +45,12 @@
             <form class="promo__form form" method="GET" action="#">
               <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
               <label for="form-name">
-                <input type="text" name="form-name" id="form-name" placeholder="Введите Ваше Имя" minlength="2" maxlength="25" required>
+                <input type="text" name="form-name" id="form-name" placeholder="Введите Ваше Имя" minlength="2" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+" required>
               </label>
               <label for="form-tel">
                 <input type="tel" name="form-tel" id="form-tel" placeholder="Введите Ваш номер телефона" required>
               </label>
-              <button class="form__button btn-reset">Подобрать велосипед мечты</button>
+              <button type="button" class="form__button btn-reset">Подобрать велосипед мечты</button>
             </form>
           </div>
         </div>
@@ -73,9 +73,7 @@
             <li class="bikes__item">
               <div class="bikes__image">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/bike-tablet-1.webp 1x, img/bike-tablet-1@2x.webp 2x" type="image/webp">
-                  <source srcset="img/bike-1.webp 1x, img/bike-1@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/bike-tablet-1.jpg 1x, img/bike-tablet-1@2x.jpg 2x">
+                  <source srcset="img/bike-1.webp 1x, img/bike-1.webp 2x" type="image/webp">
                   <!-- 1х: 342px; 2x: 684px -->
                   <img class="bikes__img" src="img/bike-1.jpg" width="342" height="503" srcset="img/bike-1@2x.jpg" alt="Дорожный велосипед">
                 </picture>
@@ -85,9 +83,7 @@
             <li class="bikes__item">
               <div class="bikes__image">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/bike-tablet-2.webp 1x, img/bike-tablet-2@2x.webp 2x" type="image/webp">
                   <source srcset="img/bike-2.webp 1x, img/bike-2@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/bike-tablet-2.jpg 1x, img/bike-tablet-2@2x.jpg 2x">
                   <!-- 1х: 342px; 2x: 684px -->
                   <img class="bikes__img" src="img/bike-2.jpg" width="342" height="503" srcset="img/bike-2@2x.jpg" alt="Горный велосипед">
                 </picture>
@@ -97,11 +93,9 @@
             <li class="bikes__item">
               <div class="bikes__image">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/bike-tablet-3.webp 1x, img/bike-tablet-3@2x.webp 2x" type="image/webp">
-                  <source srcset="img/bike-3.webp 1x, img/bike-3@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/bike-tablet-3.jpg 1x, img/bike-tablet-3@2x.jpg 2x">
+                  <source srcset="img/bike-tablet-3.webp 1x, img/bike-tablet-3@2x.webp 2x" type="image/webp">
                   <!-- 1х: 342px; 2x: 684px -->
-                  <img class="bikes__img" src="img/bike-3.jpg" width="342" height="503" srcset="img/bike-3@2x.jpg" alt="Детский велосипед">
+                  <img class="bikes__img" src="img/bike-tablet-3.jpg" width="342" height="503" srcset="img/bike-tablet-3@2x.jpg" alt="Детский велосипед">
                 </picture>
               </div>
               <span class="bikes__descr">Детский велосипед</span>

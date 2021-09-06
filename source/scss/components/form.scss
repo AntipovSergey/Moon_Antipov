@@ -1,7 +1,7 @@
 .form {
   width: 327px;
 
-  &__title {
+  .form__title {
     margin: 0;
     margin-top: 5px;
     margin-bottom: 19px;
@@ -40,7 +40,7 @@
     border: 1px solid $color-green;
   }
 
-  &__button {
+  .form__button {
     padding: 15px 47px;
     width: 100%;
     border-radius: 6px;
@@ -69,13 +69,9 @@
   .form {
     width: 321px;
 
-    &__title {
-      margin: 0;
-      margin-top: 5px;
+    .form__title {
       margin-bottom: 29px;
-      font-weight: 600;
       font-size: 18px;
-      line-height: 28px;
       color: $color-black;
     }
 
@@ -92,14 +88,9 @@
   .form {
     max-width: 288px;
 
-    &__title {
-      margin: 0;
-      margin-top: 5px;
+    .form__title {
       margin-bottom: 20px;
-      font-weight: 600;
       font-size: 18px;
-      line-height: 28px;
-      color: $color-black;
     }
 
     input {
@@ -109,7 +100,7 @@
       padding-left: 26px;
     }
 
-    &__button {
+    .form__button {
       padding: 15px 33px;
     }
   }
