@@ -58,9 +58,7 @@
     transition: color 0.3s;
   }
 
-  &__item:hover .contacts__link,
-  &__item:focus .contacts__link,
-  &__item:active .contacts__link {
+  &__item:hover .contacts__link {
     color: rgba($color: $color-black, $alpha: 1);
     transition: color 0.3s;
   }

@@ -23,6 +23,10 @@
     border-radius: 6px;
     font-size: 15px;
     line-height: 24px;
+    color: $color-black;
+  }
+
+  input::placeholder {
     color: rgba($color: $color-cod-gray, $alpha: 0.5);
   }
 

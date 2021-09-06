@@ -48,3 +48,19 @@ if(links) {
     })
   }
 }
+
+//Local storage
+window.addEventListener('DOMContentLoaded', function(){
+  const formTel = document.getElementById('form-tel');
+  const formName = document.getElementById('form-name');
+  const button = document.querySelector('.form__button')
+  button.addEventListener('click', function(){
+      localStorage.setItem('tel', formTel.value);
+      localStorage.setItem('name', formName.value);
+  })
+})
+
+window.onload = function(){
+  const form = document.querySelector('.promo__form')
+  form.reset();
+}

@@ -20,6 +20,12 @@
       width: 50px;
       height: 50px;
       z-index: 10;
+      cursor: pointer;
+    }
+
+    &__menu:hover .main-header__burger {
+      fill: $color-white;
+      transition: fill 0.3s;
     }
 
     .main-header__burger {
@@ -35,11 +41,6 @@
     &__burger:hover {
       fill: $color-white;
       transition: fill 0.3s;
-    }
-
-    &__burger:focus,
-    &__burger:active {
-      fill: $color-white;
     }
   }
 }

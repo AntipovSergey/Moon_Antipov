@@ -60,9 +60,7 @@
     transition: fill 0.3s, opacity 0.3s;
   }
 
-  &__button:hover .circle,
-  &__button:focus .circle,
-  &__button:active .circle {
+  &__button:hover .circle {
     fill: $color-bright-turquoise;
     opacity: 0.5;
     transition: fill 0.3s, opacity 0.3s;
@@ -74,9 +72,7 @@
     transition: fill 0.3s, opacity 0.3s;
   }
 
-  &__button:hover .play,
-  &__button:focus .play,
-  &__button:active .play {
+  &__button:hover .play {
     fill: $color-cod-gray-shade;
     opacity: 0.5;
     transition: fill 0.3s, opacity 0.3s;
