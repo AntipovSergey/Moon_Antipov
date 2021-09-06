@@ -59,8 +59,3 @@ window.addEventListener('DOMContentLoaded', function(){
       localStorage.setItem('name', formName.value);
   })
 })
-
-window.onload = function(){
-  const form = document.querySelector('.promo__form')
-  form.reset();
-}
