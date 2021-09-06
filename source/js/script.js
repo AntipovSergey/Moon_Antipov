@@ -52,25 +52,28 @@ if(links) {
 
 //Отправка формы
 const form = document.querySelector('.promo__form');
-form.onsubmit = async (e) => {
-  e.preventDefault();
+if(form) {
+  form.onsubmit = async (e) => {
+    e.preventDefault();
 
-  await fetch('https://echo.htmlacademy.ru/', {
-    method: 'POST',
-    body: new FormData(form)
-  })
+    await fetch('https://echo.htmlacademy.ru/', {
+      method: 'POST',
+      body: new FormData(form)
+    })
 
-  form.reset();
-
-};
+    form.reset();
+  };
+}
 
 //Local storage
 window.addEventListener('DOMContentLoaded', function(){
   const formTel = document.getElementById('form-tel');
   const formName = document.getElementById('form-name');
   const button = document.querySelector('.form__button')
-  button.addEventListener('click', function(){
-      localStorage.setItem('tel', formTel.value);
-      localStorage.setItem('name', formName.value);
-  })
+  if(button) {
+    button.addEventListener('click', function(){
+        localStorage.setItem('tel', formTel.value);
+        localStorage.setItem('name', formName.value);
+    })
+  }
 })
