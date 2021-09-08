@@ -20,11 +20,9 @@
   .bikes__list {
     @include list-reset;
     padding: 0 20px;
-    display: flex;
-    column-gap: 50px;
-    row-gap: 60px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
   }
 
   .bikes__item {
@@ -130,6 +128,12 @@
   @media (max-width: 1250px) {
     padding-top: 110px;
 
+    .bikes__list {
+      padding: 0 50px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 50px;
+    }
+
     .bikes__item {
       max-width: 300px;
 
@@ -149,10 +153,6 @@
 
   @media (max-width: 1125px) {
     padding-top: 90px;
-
-    .bikes__list {
-      column-gap: 45px;
-    }
 
     .bikes__item {
       max-width: 270px;
@@ -177,7 +177,7 @@
     padding-top: 50px;
 
     .bikes__container {
-      padding-bottom: 124px;
+      padding-bottom: 20px;
     }
 
     .bikes__title {
@@ -188,12 +188,15 @@
 
     .bikes__list {
       padding: 0;
-      row-gap: 104px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .bikes__item {
-      max-width: 270px;
+      width: 270px;
       height: 300px;
+      margin-bottom: 104px;
 
       &:nth-child(3n+1) .bikes__img {
         height: 300px;
@@ -259,18 +262,16 @@
 @include mobile {
   .bikes {
     .bikes__container {
-      padding-bottom: 108px;
+      padding-bottom: 11px;
     }
 
     .bikes__title {
       margin-bottom: 30px;
     }
 
-    .bikes__list {
-      row-gap: 96px;
-    }
-
     .bikes__item {
+      margin-bottom: 96px;
+
       &:nth-child(3n+1) .bikes__image::after {
         position: absolute;
         content: "";

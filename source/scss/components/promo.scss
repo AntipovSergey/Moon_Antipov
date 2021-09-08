@@ -45,14 +45,13 @@
     background-image: url("../../img/promo-bg.jpg");
     background-position: center;
     background-size: cover;
-    max-height: 340px;
 
     @media (resolution: 2dppx) {
       background-image: url("../../img/promo-bg@2x.jpg");
     }
 
     .promo__container {
-      padding: 135px 143px 100px 143px;
+      padding: 135px 143px 63px 143px;
       display: block;
     }
 
@@ -80,7 +79,7 @@
     .promo__second-part {
       min-width: 288px;
       position: absolute;
-      top: 406px;
+      bottom: -342px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -90,14 +89,13 @@
 @include mobile {
   .promo {
     background-size: cover;
-    max-height: 390px;
 
     @media (resolution: 2dppx) {
       background-position: top 60px;
     }
 
     .promo__container {
-      padding: 121px 15px 100px 15px;
+      padding: 121px 15px 53px 15px;
     }
 
     .promo__logo {
@@ -117,7 +115,7 @@
 
     .promo__second-part {
       position: absolute;
-      top: 455px;
+      bottom: -360px;
       left: 50%;
       transform: translateX(-50%);
     }

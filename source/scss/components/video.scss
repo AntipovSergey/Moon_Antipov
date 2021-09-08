@@ -4,6 +4,7 @@
   .video__container {
     position: relative;
     padding-top: 120px;
+    padding-bottom: 480px;
     // max-height: 706px;
     height: 100%;
   }
@@ -21,7 +22,6 @@
 
   .video__descr {
     margin: 0 auto;
-    padding-bottom: 480px;
     max-width: 340px;
     font-weight: 300;
     font-size: 16px;
@@ -37,7 +37,7 @@
     max-width: 929px;
     // margin-top: 56px;
     // top: 56px;
-    bottom: -15.2%;
+    bottom: -107px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -55,12 +55,15 @@
   .video__button {
     position: absolute;
     content: none;
-    top: 49.4%;
+    top: 49.7%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65px;
-    height: 65px;
     cursor: pointer;
+
+    .video__button svg {
+      width: 65px;
+      height: 65px;
+    }
 
     &:hover .circle,
     &:focus .circle,
@@ -94,6 +97,7 @@
   .video {
     .video__container {
       padding-top: 70px;
+      padding-bottom: 237px;
     }
 
     .video__title {
@@ -101,13 +105,12 @@
     }
 
     .video__descr {
-      padding-bottom: 237px;
       max-width: 429px;
     }
 
     .video__video {
       max-width: 503px;
-      bottom: -22.7%;
+      bottom: -94px;
       // margin-top: 41px;
       // top: 41px;
     }
@@ -117,9 +120,13 @@
     }
 
     .video__button {
+      top: 49%;
+      left: 50%;
+    }
+
+    .video__button svg {
       width: 90px;
       height: 90px;
-      top: 49%;
     }
   }
 }
@@ -128,9 +135,6 @@
   .video {
     .video__container {
       padding-top: 84px;
-    }
-
-    .video__descr {
       padding-bottom: 163px;
     }
 
@@ -142,7 +146,7 @@
 
     @media (max-width: 700px) {
       .video__video {
-        bottom: -16.2%;
+        bottom: -61px;
         margin-top: 54px;
         min-width: 288px;
       }
@@ -153,9 +157,12 @@
     }
 
     .video__button {
+      top: 48%;
+    }
+
+    .video__button svg {
       width: 65px;
       height: 65px;
-      top: 47%;
     }
   }
 }
