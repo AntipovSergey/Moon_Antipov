@@ -1,14 +1,14 @@
-.contacts {
-  .contacts__container {
-    padding-top: 246px;
+.footer {
+  .footer__container {
+    padding-top: 250px;
     padding-bottom: 95px;
     padding-left: 134px;
     padding-right: 134px;
   }
 
-  .contacts__title {
+  .footer__title {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
     text-align: center;
     color: $color-mine-shaft;
     font-weight: 600;
@@ -17,7 +17,7 @@
     letter-spacing: -0.005em;
   }
 
-  .contacts__descr {
+  .footer__descr {
     margin: 0 auto;
     margin-bottom: 40px;
     max-width: 555px;
@@ -27,65 +27,65 @@
     color: rgba($color: $color-black, $alpha: 0.7);
   }
 
-  .contacts__map {
+  .footer__map {
     display: block;
     margin-bottom: 40px;
     width: 100%;
     height: 530px;
   }
 
-  .contacts__contacts-container {
+  .footer__footer-container {
     margin: 0 auto;
     max-width: 564px;
   }
 
-  .contacts__list {
+  .footer__list {
     @include list-reset;
     display: flex;
     align-items: center;
     gap: 91px;
   }
 
-  .contacts__item {
+  .footer__item {
     display: flex;
     gap: 15px;
 
-    &:hover .contacts__link,
-    &:focus .contacts__link,
-    &:active .contacts__link {
+    &:hover .footer__link,
+    &:focus .footer__link,
+    &:active .footer__link {
       color: rgba($color: $color-black, $alpha: 1);
       transition: color 0.3s;
     }
 
-    &:hover .contacts__mail,
-    &:focus .contacts__mail,
-    &:active .contacts__mail {
+    &:hover .footer__mail,
+    &:focus .footer__mail,
+    &:active .footer__mail {
       opacity: 0.5;
       transition: opacity 0.3s;
     }
 
-    &:hover .contacts__tel,
-    &:focus .contacts__tel,
-    &:active .contacts__tel {
+    &:hover .footer__tel,
+    &:focus .footer__tel,
+    &:active .footer__tel {
       opacity: 0.5;
       transition: opacity 0.3s;
     }
   }
 
-  .contacts__link {
+  .footer__link {
     font-size: 16px;
     line-height: 22px;
     color: rgba($color: $color-black, $alpha: 0.5);
     transition: color 0.3s;
   }
 
-  .contacts__item .contacts__mail {
+  .footer__item .footer__mail {
     fill: $color-bright-turquoise;
     opacity: 1;
     transition: opacity 0.3s;
   }
 
-  .contacts__item .contacts__tel {
+  .footer__item .footer__tel {
     stroke: $color-bright-turquoise;
     fill: transparent;
     opacity: 1;
@@ -94,42 +94,42 @@
 }
 
 @include tablet {
-  .contacts {
+  .footer {
     flex: 0 0 auto;
 
-    .contacts__container {
+    .footer__container {
       padding-top: 155px;
       padding-bottom: 53px;
       padding-left: 35px;
       padding-right: 35px;
     }
 
-    .contacts__title {
+    .footer__title {
       margin-bottom: 20px;
       font-size: 24px;
     }
 
-    .contacts__descr {
+    .footer__descr {
       margin-bottom: 20px;
       max-width: 629px;
     }
 
-    .contacts__map {
+    .footer__map {
       margin-bottom: 22px;
       height: 545px;
     }
 
-    .contacts__contacts-container {
+    .footer__footer-container {
       max-width: 559px;
     }
   }
 }
 
 @include mobile {
-  .contacts {
-    .contacts__container {
+  .footer {
+    .footer__container {
       // margin-top: 119px;
-      margin-top: 37vw;
+      margin-top: 39vw;
       padding-top: 0;
       padding-bottom: 49px;
       padding-left: 0;
@@ -140,32 +140,32 @@
       }
     }
 
-    .contacts__title {
+    .footer__title {
       font-size: 18px;
     }
 
-    .contacts__descr {
+    .footer__descr {
       margin-bottom: 19px;
       padding-left: 35px;
       padding-right: 35px;
     }
 
-    .contacts__map {
+    .footer__map {
       margin-bottom: 31px;
       height: 250px;
     }
 
-    .contacts__contacts-container {
+    .footer__footer-container {
       padding-left: 30px;
       padding-right: 22px;
     }
 
-    .contacts__list {
+    .footer__list {
       flex-direction: column;
       gap: 25px;
     }
 
-    .contacts__item {
+    .footer__item {
       &:first-child {
         display: flex;
         gap: 15px;
@@ -176,7 +176,7 @@
         gap: 15px;
       }
 
-      &:last-child .contacts__link {
+      &:last-child .footer__link {
         padding-right: 20px;
       }
     }

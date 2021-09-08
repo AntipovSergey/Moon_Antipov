@@ -1,14 +1,13 @@
 .promo {
   background: url("../../img/promo-bg.jpg") no-repeat center / cover;
   background-color: $color-black;
-  max-height: 825px;
 
   @media (resolution: 2dppx) {
     background: url("../../img/promo-bg@2x.jpg") no-repeat center / cover;
   }
 
   .promo__container {
-    padding: 318px 173px 240px 173px;
+    padding: 318px 173px 219px 173px;
     display: flex;
     justify-content: space-between;
   }
