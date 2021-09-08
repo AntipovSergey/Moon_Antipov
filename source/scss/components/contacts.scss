@@ -95,6 +95,8 @@
 
 @include tablet {
   .contacts {
+    flex: 0 0 auto;
+
     .contacts__container {
       padding-top: 155px;
       padding-bottom: 53px;
@@ -126,10 +128,16 @@
 @include mobile {
   .contacts {
     .contacts__container {
-      padding-top: 119px;
+      // margin-top: 119px;
+      margin-top: 37vw;
+      padding-top: 0;
       padding-bottom: 49px;
       padding-left: 0;
       padding-right: 0;
+
+      @media (min-width: 545px) {
+        margin-top: 190px;
+      }
     }
 
     .contacts__title {

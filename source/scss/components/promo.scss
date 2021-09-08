@@ -1,13 +1,10 @@
 .promo {
-  background-image: url("../../img/promo-bg.jpg");
-  background-position: center;
-  background-size: cover;
+  background: url("../../img/promo-bg.jpg") no-repeat center / cover;
   background-color: $color-black;
-  height: 100vh;
   max-height: 825px;
 
   @media (resolution: 2dppx) {
-    background-image: url("../../img/promo-bg@2x.jpg");
+    background: url("../../img/promo-bg@2x.jpg") no-repeat center / cover;
   }
 
   .promo__container {
