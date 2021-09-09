@@ -1,9 +1,9 @@
 .promo {
-  background: url("img/promo-bg.jpg") no-repeat center / cover;
+  background: url("../img/promo-bg.jpg") no-repeat center / cover;
   background-color: $color-black;
 
   @media (resolution: 2dppx) {
-    background: url("img/promo-bg@2x.jpg") no-repeat center / cover;
+    background: url("../img/promo-bg@2x.jpg") no-repeat center / cover;
   }
 
   .promo__container {
@@ -51,12 +51,12 @@
 @include tablet {
   .promo {
     position: relative;
-    background-image: url("img/promo-bg.jpg");
+    background-image: url("../img/promo-bg.jpg");
     background-position: center;
     background-size: cover;
 
     @media (resolution: 2dppx) {
-      background-image: url("img/promo-bg@2x.jpg");
+      background-image: url("../img/promo-bg@2x.jpg");
     }
 
     .promo__container {
