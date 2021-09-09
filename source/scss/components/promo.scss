@@ -1,9 +1,9 @@
 .promo {
-  background: url("../../img/promo-bg.jpg") no-repeat center / cover;
+  background: url("/img/promo-bg.jpg") no-repeat center / cover;
   background-color: $color-black;
 
   @media (resolution: 2dppx) {
-    background: url("../../img/promo-bg@2x.jpg") no-repeat center / cover;
+    background: url("/img/promo-bg@2x.jpg") no-repeat center / cover;
   }
 
   .promo__container {
