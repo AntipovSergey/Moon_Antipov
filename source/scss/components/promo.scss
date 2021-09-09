@@ -36,6 +36,15 @@
     letter-spacing: -0.005em;
     opacity: 0.8;
     color: $color-white;
+
+    @media (max-width: 1065px) {
+      max-width: 345px;
+    }
+
+    @media (max-width: 1040px) {
+      max-width: 340px;
+      font-size: 19px;
+    }
   }
 }
 
